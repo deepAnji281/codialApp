@@ -1,4 +1,4 @@
 const home=function(req,res){
- res.send('<h1>hello how are you</h1>')
+   return res.render('home',{title:"homepage"})
 }
 module.exports=home;
