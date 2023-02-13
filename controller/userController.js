@@ -1,5 +1,6 @@
 const user=function(req,res)
 {
-    res.send('this is an porfile of user');
+    return res.render('profile',{title:"profile page"});
+
 }
 module.exports=user

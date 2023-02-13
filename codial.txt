@@ -1,0 +1,18 @@
+1) // express installation -> npm install express
+2) // require the express-> const express=require('express');
+3) // make an express app that is excuting const app=express();
+4) // port that is running at port=5000
+5) // we need to install nodemon becouse->we have need of 
+                               a) script->starts:nodemon index.js
+
+6)// mediator-> app.use(require('something'));
+7) // mediator-> app.use(require('file name' or 'file path'));
+8) / we need to install view engine -> npm install ejs
+9) to use layouts we need to install->npm install express-ejs-layouts
+10) we need to require use layouts ->require('express-ejs-layouts');
+11) then use ->app.use(expressLayouts);
+12) to use static files like images,css,js we will be using app.use(express.static('./assets'));
+13)to use some kind of diffrent style for diffrent page we will be using
+               a)app.set(layout extractStyles,true);
+               b)app.set(layout extractScripts,true);
+                               
