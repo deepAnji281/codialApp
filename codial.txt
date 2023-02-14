@@ -16,3 +16,13 @@
                a)app.set(layout extractStyles,true);
                b)app.set(layout extractScripts,true);
                                
+// linking to mogoose database
+    1)install -> npm install mongoose
+    2) in configure/mongoose.js we need to do 
+             a) const mogoose=require('mogoose');
+             b)mogoose.connect('mongodb://localhost/codial_developement');
+             c) db=mogoose.connection;
+             d)db.on('error',console.error.bind('error in connecting to db'));
+             e) db.once('open',()=>{
+                console.log('successfully connected to db');
+             })
