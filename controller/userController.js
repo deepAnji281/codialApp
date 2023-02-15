@@ -62,23 +62,6 @@ module.exports.create=function(req,res){
 module.exports.createSession=function(req,res){
     //todo latter
     // find the user
-    User.findOne({email:req.body.email},(err,user)=>{
-        if(err){console.log('getting error in sigining the page ');return;}
-        // user find
-        if(user)
-        {
-            //password not matches
-            if(user.password!=req.body.password)
-            {
-                return res.redirect('back');
-            }
-            // handle the session creation
-            res.cookie('user_id',user.id);
-            return res.redirect('/user');
-        }
-        return res.redirect('back');
-
-
-    })
+    
 
 }
